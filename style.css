@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1340px;
+    min-height: 100vh;
+    font-family: "Rubik";
+    overflow-x: hidden;
+}
+
+/*  Star Main Area */
+
+#site{
+    background-image: url(./images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: calc(100%);
+    text-align: center;
+}
+
+.site-h1{
+    color: hsl(0, 0%, 100%);
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.type{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#in{
+    padding: 0.5rem 1rem;
+    color: hsl(0, 0%, 17%);
+    font-weight: 400;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    width: 450px;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+    height: 40px;
+}
+
+#in::placeholder{
+    color: hsl(0, 0%, 59%);   
+}
+
+#btn{
+    padding: 0.5rem 1rem;
+    background-color: hsl(0, 0%, 17%);
+    border: none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: white;
+    width: 850px;
+    height: 150px;
+    border-radius: 8px;
+    margin-left: 15rem;
+    gap: 1rem;
+    position: absolute;
+    /* z-index: 1; */
+}
+
+.info-span{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.info-h2{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+#map{
+    width: 100%;
+    height: 70vh;
+    margin-top: 6.9rem;
+    z-index: -1;
+    position: relative;
+}
+
+/* End Main Area */
+
+/* START Footer Area */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: hsl(240, 10%, 16%);
+    padding: 5px;
+}
+
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover {
+    color: white;
+}
+
+/*  End Footer Area */
+
+/* Start Media Querry Area  */
+
+@media screen and (max-width: 768px){
+    #map{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body{
+        min-width: 375px;
+    }
+
+    #site{
+        background-image: url(./images/pattern-bg-mobile.png);
+    }
+
+    .site-h1{
+        font-size: 2rem;
+        padding: 4rem 2rem 2rem 2rem;   
+    }
+
+    .type{
+        margin-top: 1rem;
+        padding: 0rem 1rem;
+    }
+
+    #in{
+        font-size: 1rem;
+    }
+
+    .info{
+        flex-direction: column;
+        width: 340px;
+        margin: 2rem 1rem 1rem 1rem;
+        height: auto;
+        gap: 0.5rem;
+        padding: 2rem 1rem;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .info-span{
+        font-size: 1rem;
+    }
+
+    .info-h2{
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    #map{
+        margin-top: 8.4rem;
+    }
+
+}
+
+
+/* End Media Querry Area  */
